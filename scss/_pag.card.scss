@@ -1,0 +1,132 @@
+.container-card {
+  width: 100%;
+  height: auto;
+  background-color: $card-bg-page;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 6rem;
+  flex-flow: wrap;
+}
+
+.box1 {
+  width: 300px;
+  height: 400px;
+  background-color: $border-color;
+  box-sizing: border-box;
+  margin: 3rem;
+  text-align: center;
+  box-shadow: $box-shadow;
+  color: $white-color;
+  padding: 10px;
+
+  .button {
+    background-color: $lightgreen-button;
+    color: $white-color;
+    border-radius: 3px;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    border: $border-color;
+    font-size: larger;
+    font-weight: map-get($font-weight, medium);
+    box-shadow: $button-shadow;
+
+    &:hover {
+      background-color: $green-hover-button;
+      color: $font-default;
+      font-weight: map-get($font-weight, medium);
+    }
+  }
+
+  .titulo {
+    color: solid $font-default;
+    font-size: larger;
+    font-weight: map-get($font-weight, bold);
+    text-decoration: underline;
+    margin-top: 2rem;
+  }
+  .subtitulo {
+    color: $font-default;
+    font-weight: map-get($font-weight, medium);
+    font-size: large;
+  }
+}
+
+.cont-card {
+  display: flex;
+  width: 300px;
+  height: 400px;
+  perspective: 600px;
+  box-shadow: $box-shadow;
+  margin: 3rem;
+  background-color: $card-bg-page;
+
+  &:hover > .card {
+    cursor: pointer;
+    transform: rotateY(180deg) rotateZ(180deg);
+  }
+
+  .card {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+
+    .front,
+    .back {
+      height: 100%;
+      width: 100%;
+      box-shadow: $box-shadow;
+      position: absolute;
+      backface-visibility: hidden;
+      text-align: center;
+    }
+
+    .front {
+      background-image: url("../img/mandalacolorescomprimido.jpg");
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+    }
+    .back {
+      background-color: $card-back-bg;
+      transform: rotateY(180deg) rotateZ(180deg);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: $white-color;
+      text-align: center;
+      padding: 3px;
+      text-align: center;
+    }
+    .back-text {
+      display: flex;
+      flex-direction: column;
+      padding: 0.5rem;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .box1 {
+    width: 40%;
+  }
+  .cont-card {
+    width: 40%;
+  }
+}
+
+@media (max-width: 600px) {
+  .box1 {
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+  .cont-card {
+    width: 80%;
+    margin-top: 0;
+  }
+}

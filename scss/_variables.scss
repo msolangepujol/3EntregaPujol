@@ -1,0 +1,24 @@
+/*colors*/
+$blue-box: rgb(162, 203, 209);
+$lightgreen-button: rgb(134, 162, 64);
+$green-hover-button: rgb(134, 180, 138);
+$card-bg-page: rgb(218, 216, 216);
+$card-back-bg: #3a3a3a;
+$font-default: black;
+$border-color: grey;
+$white-color: white;
+
+/*shadows*/
+$box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+$button-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+
+/*fonts*/
+$font-weight: (
+  "regular": 400,
+  "medium": 600,
+  "bold": 800,
+);
+
+/*responsive*/
+$mobile: 600px;
+$desktop: 1200px;

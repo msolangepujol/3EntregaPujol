@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+
+/*colors*/
+/*shadows*/
+/*fonts*/
+/*responsive*/
+.container-card {
+  width: 100%;
+  height: auto;
+  background-color: rgb(218, 216, 216);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 6rem;
+  flex-flow: wrap;
+}
+
+.box1 {
+  width: 300px;
+  height: 400px;
+  background-color: grey;
+  box-sizing: border-box;
+  margin: 3rem;
+  text-align: center;
+  box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+  color: white;
+  padding: 10px;
+}
+.box1 .button {
+  background-color: rgb(134, 162, 64);
+  color: white;
+  border-radius: 3px;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  border: grey;
+  font-size: larger;
+  font-weight: 600;
+  box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+}
+.box1 .button:hover {
+  background-color: rgb(134, 180, 138);
+  color: black;
+  font-weight: 600;
+}
+.box1 .titulo {
+  color: solid black;
+  font-size: larger;
+  font-weight: 800;
+  text-decoration: underline;
+  margin-top: 2rem;
+}
+.box1 .subtitulo {
+  color: black;
+  font-weight: 600;
+  font-size: large;
+}
+
+.cont-card {
+  display: flex;
+  width: 300px;
+  height: 400px;
+  perspective: 600px;
+  box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+  margin: 3rem;
+  background-color: rgb(218, 216, 216);
+}
+.cont-card:hover > .card {
+  cursor: pointer;
+  transform: rotateY(180deg) rotateZ(180deg);
+}
+.cont-card .card {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  transition: transform 1500ms;
+  transform-style: preserve-3d;
+}
+.cont-card .card .front,
+.cont-card .card .back {
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+  position: absolute;
+  backface-visibility: hidden;
+  text-align: center;
+}
+.cont-card .card .front {
+  background-image: url("../img/mandalacolorescomprimido.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+.cont-card .card .back {
+  background-color: #3a3a3a;
+  transform: rotateY(180deg) rotateZ(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 3px;
+  text-align: center;
+}
+.cont-card .card .back-text {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+
+@media (max-width: 1200px) {
+  .box1 {
+    width: 40%;
+  }
+  .cont-card {
+    width: 40%;
+  }
+}
+@media (max-width: 600px) {
+  .box1 {
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+  .cont-card {
+    width: 80%;
+    margin-top: 0;
+  }
+}
+.icono {
+  font-size: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */
