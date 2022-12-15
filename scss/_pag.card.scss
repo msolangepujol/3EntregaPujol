@@ -19,37 +19,37 @@
   box-shadow: $box-shadow;
   color: $white-color;
   padding: 10px;
+}
 
-  .button {
-    background-color: $warning-button;
-    color: $white-color;
-    border-radius: 3px;
-    padding: 0.5rem;
-    margin-top: 1rem;
-    border: $border-color;
-    font-size: larger;
-    font-weight: map-get($font-weight, medium);
-    box-shadow: $button-shadow;
+.button {
+  background-color: $orange-button;
+  color: $white-color;
+  border-radius: 3px;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  border: $border-color;
+  font-size: larger;
+  font-weight: map-get($font-weight, medium);
+  box-shadow: $button-shadow;
 
-    &:hover {
-      background-color: $green-hover-button;
-      color: $font-default;
-      font-weight: map-get($font-weight, medium);
-    }
-  }
-
-  .titulo {
-    color: solid $font-default;
-    font-size: larger;
-    font-weight: map-get($font-weight, bold);
-    text-decoration: underline;
-    margin-top: 2rem;
-  }
-  .subtitulo {
+  &:hover {
+    background-color: $green-hover-button;
     color: $font-default;
     font-weight: map-get($font-weight, medium);
-    font-size: large;
   }
+}
+
+.titulo {
+  color: solid $font-default;
+  font-size: larger;
+  font-weight: map-get($font-weight, bold);
+  text-decoration: underline;
+  margin-top: 2rem;
+}
+.subtitulo {
+  color: $font-default;
+  font-weight: map-get($font-weight, medium);
+  font-size: large;
 }
 
 .cont-card {

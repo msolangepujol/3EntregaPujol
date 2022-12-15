@@ -1,0 +1,15 @@
+.caja {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(174, 168, 168);
+  color: black;
+  margin: 1rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+.back {
+  background-color: white;
+  opacity: 80%;
+  color: black;
+}

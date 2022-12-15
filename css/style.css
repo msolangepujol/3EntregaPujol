@@ -34,8 +34,9 @@ h1 {
   color: white;
   padding: 10px;
 }
-.box1 .button {
-  background-color: rgb(134, 162, 64);
+
+.button {
+  background-color: rgb(243, 181, 67);
   color: white;
   border-radius: 3px;
   padding: 0.5rem;
@@ -45,19 +46,21 @@ h1 {
   font-weight: 600;
   box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
 }
-.box1 .button:hover {
+.button:hover {
   background-color: rgb(134, 180, 138);
   color: black;
   font-weight: 600;
 }
-.box1 .titulo {
+
+.titulo {
   color: solid black;
   font-size: larger;
   font-weight: 800;
   text-decoration: underline;
   margin-top: 2rem;
 }
-.box1 .subtitulo {
+
+.subtitulo {
   color: black;
   font-weight: 600;
   font-size: large;
@@ -138,6 +141,22 @@ h1 {
 }
 .icono {
   font-size: 30px;
+}
+
+.caja {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(174, 168, 168);
+  color: black;
+  margin: 1rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+.back {
+  background-color: white;
+  opacity: 80%;
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */
