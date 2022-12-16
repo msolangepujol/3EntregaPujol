@@ -19,6 +19,9 @@
   box-shadow: $box-shadow;
   color: $white-color;
   padding: 10px;
+  &:hover {
+    transform: translateY(-3px) scale(1.08);
+  }
 }
 
 .button {

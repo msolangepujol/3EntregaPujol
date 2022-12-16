@@ -1,3 +1,7 @@
 .icono {
-  font-size: 30px;
+  font-size: 25px;
+  background-color: $card-back-bg;
+  &:hover {
+    transform: translateY(-3px) scale(1.08);
+  }
 }
